@@ -94,7 +94,7 @@ instance Show DateSpan where
     show (DateSpan s1 s2) = "DateSpan \"" ++ show s1 ++ "\" \"" ++ show s2 ++ "\""
 
 showDate :: Day -> String
-showDate = formatTime defaultTimeLocale "%0C%y/%m/%d"
+showDate = formatTime defaultTimeLocale "%0C%y-%m-%d"
 
 -- XXX review for more boundary crossing issues
 -- | Render a datespan as a display string, abbreviating into a
